@@ -1,0 +1,61 @@
+.side-nav-default{
+  background-color: var(--dark);
+  color: #484e4a;
+  overflow-y: auto;
+}
+.nav-header{
+  height: 9em;
+  background-color: var(--dark);
+}
+.nha-logo{
+  background-position: center;
+  height: 7.3em;
+  width: 7.3em;
+  background-repeat: no-repeat;
+  background-size: 6em;
+  filter: drop-shadow(2px 2px 2px var(--dark));
+  text-align: end;
+}
+
+.nav-menu-heading{
+  font-family: 'Montserrat';
+  font-size: 1.1em;
+  color: var(--white) !important;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px #333;
+  border-bottom: 1px dotted #000;
+  // padding-bottom: 5em !important;
+  // padding-left: 1em;
+}
+.nav-link[data-toggle].collapsed:before {
+  content: "▾  ";
+}
+
+.nav-link[data-toggle]:not(.collapsed):before {
+  content: "▴  ";
+}
+.side-nav-default a {
+  // padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 0.90em;
+  color: var(--dark-light);
+  display: block;
+  transition: 0.3s;
+  font-family: 'Raleway';
+  border-bottom: 1px dotted black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav-default a:hover {
+  color: var(--white);
+  transition: 0.3s;
+  font-size: 0.93em;
+}
+
+.side-nav-default a:active{
+  color: var(--white);
+}
+// .side-nav-default .nav-item-container{
+//   overflow-y: auto;
+//   position: absolute;
+// }

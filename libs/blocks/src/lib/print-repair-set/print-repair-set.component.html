@@ -1,0 +1,38 @@
+
+<!-- asset register print -->
+<div id="repairTable">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <label class="cssHeading cssMargin">MOBILEZ LAB</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-right p-0 m-0">
+            <label class="cssAddress">Shop# 25, Midway Plaza Blue Area, Islamabad</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-right p-0 m-0">
+            <label class="cssMobile">0336-5249680</label>
+        </div>
+    </div>
+    <div class="cssMarginTop">
+        <label class="cssLabelHead">Total Amount</label> 
+        <label class="cssLabel cssMargin41">Rs. {{lblTotalAmount | number}}</label> 
+    </div>
+    <div>
+        <label class="cssLabelHead">Amount Paid</label>
+        <label class="cssLabel cssMargin15">Rs. {{lblAmountPaid | number}}</label>
+    </div>
+    <div>
+        <label class="cssLabelHead">Date</label> 
+        <label class="cssLabel cssMargin1">{{lblDate | date: 'MMM, dd YYYY'}}</label> 
+    </div>
+    <div>
+        <label class="cssLabelHead">Time</label> 
+        <label class="cssLabel cssMargin1">{{lblDate | date: 'hh:mm a'}}</label> 
+    </div>
+    <div class="cssMarginTop5 cssMargin6">
+        <label>Powered By SymCloud</label>
+    </div>
+</div>

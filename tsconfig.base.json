@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@sym-mis/admin-panel": ["libs/admin-panel/src/index.ts"],
+      "@sym-mis/auth": ["libs/auth/src/index.ts"],
+      "@sym-mis/blocks": ["libs/blocks/src/index.ts"],
+      "@sym-mis/company": ["libs/company/src/index.ts"],
+      "@sym-mis/layouts": ["libs/layouts/src/index.ts"],
+      "@sym-mis/material": ["libs/material/src/index.ts"],
+      "@sym-mis/repair-module": ["libs/repair-module/src/index.ts"],
+      "@sym-mis/shared": ["libs/shared/src/index.ts"],
+      "@sym-mis/shared/helpers/field-validations": [
+        "libs/shared/helpers/field-validations/src/index.ts"
+      ],
+      "@sym-mis/shared/helpers/guards": [
+        "libs/shared/helpers/guards/src/index.ts"
+      ],
+      "@sym-mis/shared/helpers/interceptors": [
+        "libs/shared/helpers/interceptors/src/index.ts"
+      ],
+      "@sym-mis/shared/interface": ["libs/shared/interface/src/index.ts"],
+      "@sym-mis/shared/services/auth": [
+        "libs/shared/services/auth/src/index.ts"
+      ],
+      "@sym-mis/shared/services/data": [
+        "libs/shared/services/data/src/index.ts"
+      ],
+      "@sym-mis/shared/services/global-data": [
+        "libs/shared/services/global-data/src/index.ts"
+      ],
+      "@sym-mis/table-block": ["libs/table-block/src/index.ts"],
+      "@sym-mis/ui": ["libs/ui/src/index.ts"],
+      "@sym-mis/umis": ["libs/umis/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

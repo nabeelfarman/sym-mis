@@ -1,0 +1,262 @@
+/******************button css ***************/
+.btnCustom{
+    height: 2.5em;
+    width: 8em;
+    background: #7FFFD4 !important;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btnCustom:hover{
+    transition: all .3s ease-in-out;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px 0 rgba( 105, 105, 105, .3);
+}
+
+.btnSearch{
+    height: 2.3em;
+    width: 6em;
+    background: #C24641 !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnSearch:hover{
+    transition: all .3s ease-in-out;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px 0 rgba( 105, 105, 105, .3);
+}
+
+/************************* box css *******************/
+.blue-box{
+    height: 8em;
+    background-image: linear-gradient(to left, #2B3856 0.2%, #53B6C2 80%, #BDEDFF);
+}
+.pink-box{
+    height: 8em;
+    background-image: linear-gradient(to left, #2B3856 0.2%, #FA8072 80%, #DA8A67);
+}
+.yellow-box{
+    height: 8em;
+    background-image: linear-gradient(to left, #2B3856 0.2%, #EE9A4D 80%, #FBB917);
+}
+.purple-box{
+    height: 8em;
+    background-image: linear-gradient(to left, #2B3856 0.2%, #A74AC7 70%, #736AFF);
+}
+
+.dark-blue-box{
+    height: 8em;
+    background-image: linear-gradient(to left, #313855, #313855);
+}
+
+/************************* text color css *******************/
+
+.txtClrGrey{
+    color: #f5f7fa !important;
+}
+
+.txtClrMGrey{
+    color: #B6B6B4 !important;
+}
+
+/************************* font size css *******************/
+.txtFontSm{
+    font-size: small !important;
+}
+.txtFontXS{
+    font-size: x-small !important;
+}
+
+/********************* borders css *******************/
+.tClrBrdrBlue {
+    margin: 0;
+    padding-bottom: 7px;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+.tClrBrdrBlue:before {
+    position: absolute;
+    background-image: linear-gradient(to left, #53B6C2, #53B6C2);
+    height: 3px;
+    content: '';
+    width: 10em;
+    bottom: -3px;
+    left: 0;
+}
+
+.tClrBrdrPink {
+    margin: 0;
+    padding-bottom: 7px;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+.tClrBrdrPink:before {
+    position: absolute;
+    background-image: linear-gradient(to left, #FA8072, #FA8072);
+    height: 3px;
+    content: '';
+    width: 8em;
+    bottom: -3px;
+    left: 0;
+}
+
+.tClrBrdrYlw {
+    margin: 0;
+    padding-bottom: 7px;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+.tClrBrdrYlw:before {
+    position: absolute;
+    background-image: linear-gradient(to left, #EE9A4D, #EE9A4D);
+    height: 3px;
+    content: '';
+    width: 12em;
+    bottom: -3px;
+    left: 0;
+}
+
+.tClrBrdrPrple {
+    margin: 0;
+    padding-bottom: 7px;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+.tClrBrdrPrple:before {
+    position: absolute;
+    background-image: linear-gradient(to left, #A74AC7, #A74AC7);
+    height: 3px;
+    content: '';
+    width: 5em;
+    bottom: -3px;
+    left: 0;
+}
+
+.tClrBrdrDrkBlue {
+    margin: 0;
+    padding-bottom: 7px;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+.tClrBrdrDrkBlue:before {
+    position: absolute;
+    background-image: linear-gradient(to left, #736AFF, #736AFF);
+    height: 3px;
+    content: '';
+    width: 10em;
+    bottom: -3px;
+    left: 0;
+}
+
+/************************** box background image and icon css *************************/
+.bgImgSup{
+    height: 7em !important;
+    width: 7em !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../assets/images/supplies.svg');
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 0.1;
+}
+
+.bgImgSupWhite{
+    height: 2em !important;
+    width: 2em !important;
+    background-image: url('../assets/images/supplies.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.bgImgGraph{
+    height: 1.5em !important;
+    width: 1.5em !important;
+    background-image: url('../assets/images/music-black-vertical-bars.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: grayscale(10%) invert(60%);
+}
+
+.bgImgWave{
+    height: 1.5em !important;
+    width: 1.5em !important;
+    background-image: url('../assets/images/audio-waves.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: grayscale(10%) invert(60%);
+}
+
+.bgImgUser{
+    height: 7em !important;
+    width: 7em !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../assets/images/user-group.svg');
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 0.1;
+}
+
+.bgImgUserWhite{
+    height: 2em !important;
+    width: 2em !important;
+    background-image: url('../assets/images/user-group.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.bgImgShop{
+    height: 7em !important;
+    width: 7em !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../assets/images/shopping-cart.svg');
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 0.1;
+}
+
+.bgImgShopWhite{
+    height: 2em !important;
+    width: 2em !important;
+    background-image: url('../assets/images/shopping-cart.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.bgImgMsg{
+    height: 7em !important;
+    width: 7em !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../assets/images/speech-bubble.svg');
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 0.1;
+}
+
+.bgImgMsgWhite{
+    height: 2em !important;
+    width: 2em !important;
+    background-image: url('../assets/images/speech-bubble.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}

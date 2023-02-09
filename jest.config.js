@@ -1,0 +1,23 @@
+module.exports = {
+  projects: [
+    '<rootDir>/apps/sym-mis',
+    '<rootDir>/libs/admin-panel',
+    '<rootDir>/libs/blocks',
+    '<rootDir>/libs/material',
+    '<rootDir>/libs/layouts',
+    '<rootDir>/libs/shared',
+    '<rootDir>/libs/ui',
+    '<rootDir>/libs/auth',
+    '<rootDir>/libs/repair-module',
+    '<rootDir>/libs/table-block',
+    '<rootDir>/libs/shared/services/data',
+    '<rootDir>/libs/shared/services/auth',
+    '<rootDir>/libs/shared/services/global-data',
+    '<rootDir>/libs/shared/helpers/field-validations',
+    '<rootDir>/libs/shared/helpers/guards',
+    '<rootDir>/libs/shared/helpers/interceptors',
+    '<rootDir>/libs/shared/interface',
+    '<rootDir>/libs/company',
+    '<rootDir>/libs/umis',
+  ],
+};

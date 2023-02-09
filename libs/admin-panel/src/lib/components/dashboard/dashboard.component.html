@@ -1,0 +1,246 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h2 class="txtClrGrey m-0">Classic Dashboard</h2>
+          <label class="txtClrGrey">
+            <small>Creativity Crafted Dashboard for your needs</small>
+          </label>
+        </div>
+        <div class="d-flex flex-row">
+          <div class="me-2">
+            <mat-form-field class="w-100">
+              <input matInput placeholder="Repair ID" [(ngModel)]="txtRepairID">
+            </mat-form-field>
+          </div>
+          <div class="me-4 mt-2 btnSearch">
+            <div class="d-flex flex-row justify-content-center mt-2" (click)="getRepair()">
+              Search
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column flex-lg-row flex-xl-row mt-2">
+    <div class="blue-box tClrBrdrBlue mt-3 me-4 w-100">
+      <div class="bgImgSup">
+      </div>
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">25890</h5>
+          <label class="txtClrGrey ms-2">
+            <small>TOTAL INCOME</small>
+          </label>
+        </div>
+        <div class="bgImgSupWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pink-box tClrBrdrPink mt-3 me-4 w-100">
+      <div class="bgImgUser">
+      </div>
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">45201</h5>
+          <label class="txtClrGrey ms-2">
+            <small>TOTAL USERS</small>
+          </label>
+        </div>
+        <div class="bgImgUserWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yellow-box tClrBrdrYlw mt-3 me-4 w-100">
+      <div class="bgImgShop">
+      </div>
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">8704</h5>
+          <label class="txtClrGrey ms-2">
+            <small>TOTAL REPAIRS</small>
+          </label>
+        </div>
+        <div class="bgImgShopWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="purple-box tClrBrdrPrple mt-3 me-4 w-100">
+      <div class="bgImgMsg">
+      </div>
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">62158</h5>
+          <label class="txtClrGrey ms-2">
+            <small>COMPLETE REPAIRS</small>
+          </label>
+        </div>
+        <div class="bgImgMsgWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column flex-lg-row flex-xl-row mt-2">
+    <div class="dark-blue-box tClrBrdrDrkBlue mt-3 me-4 w-100">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">{{totalUser}}</h5>
+          <label class="txtClrMGrey ms-2">
+            <small>TOTAL USERS</small>
+          </label>
+        </div>
+        <div class="bgImgSupWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-blue-box tClrBrdrDrkBlue mt-3 me-4 w-100">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">{{totalRepair}}</h5>
+          <label class="txtClrMGrey ms-2">
+            <small>TOTAL REPAIRS</small>
+          </label>
+        </div>
+        <div class="bgImgUserWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-blue-box tClrBrdrDrkBlue mt-3 me-4 w-100">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">{{totalPending}}</h5>
+          <label class="txtClrMGrey ms-2">
+            <small>PENDING REPAIRS</small>
+          </label>
+        </div>
+        <div class="bgImgShopWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-blue-box tClrBrdrDrkBlue mt-3 me-4 w-100">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column">
+          <h5 class="txtClrGrey font-weight-bold mt-2 ms-2">{{totalDelivered}}</h5>
+          <label class="txtClrMGrey ms-2">
+            <small>COMPLETE REPAIRS</small>
+          </label>
+        </div>
+        <div class="bgImgMsgWhite mt-3 me-3">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <label class="txtClrGrey txtFontSm ms-2 mt-1">
+          Monthly Progress
+        </label>
+        <div class="d-flex flex-row">
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave m-0">
+          </div>
+          <div class="bgImgWave me-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2 mb-2 me-3 w-100">
+    <!-- <div class="col-md-6 mt-2 mb-2">
+            <div [chart]="area_chart" class="h-100 w-100"></div>
+        </div>
+        <div class="col-md-6 mt-2 mb-2">
+            <div [chart]="map_chart" class="h-100 w-100"></div>
+        </div> -->
+  </div>
+</div>

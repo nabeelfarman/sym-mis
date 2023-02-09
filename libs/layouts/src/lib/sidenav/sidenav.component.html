@@ -1,0 +1,60 @@
+<div class="h-100 side-nav-default" data-simplebar>
+    <!-- nav header -->
+    <div class="nav-header">
+        <div class="row pb-2">
+            <div class="col-md-12 nha-logo"></div>
+            <div class="row w-100">
+                <div class="col-md-12 text-center p-0">
+                    <div class="nav-menu-heading pb-3">SymMis</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav header -->
+    <hr />
+    <!-- nav menu -->
+    <div class="nav-item-container mt-3">
+        <ul class="nav flex-column flex-nowrap overflow-hidden" *ngFor="let item of menuList">
+            <li class="nav-item">
+                <a
+                  class="nav-link text-truncate"
+                  href="/{{item.url}}"
+                  routerLinkActive="active"
+                  routerLink="/{{item.url}}"
+                  (click)="openLink(item.menuName)"
+                  ><span class="d-none d-sm-inline">{{item.menuName}}</span></a>
+              </li>
+            <!-- <li class="nav-item">
+                <a
+                    class="nav-link text-truncate"
+                    href=""
+                    ><span class="d-none d-sm-inline">Home</span></a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a
+                    class="nav-link text-truncate"
+                    href="/{{item.url}}"
+                    routerLinkActive="active"
+                    routerLink="/{{item.url}}"
+                    >
+                    <span class="d-none d-sm-inline">{{item.menuName}}</span></a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a
+                    class="nav-link text-truncate"
+                    href="/rmis/detail"
+                    routerLinkActive="active"
+                    routerLink="/rmis/detail"
+                    ><span class="d-none d-sm-inline">Repair Detail</span></a>
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link text-truncate"
+                    href="/rmis/repair"
+                    routerLinkActive="active"
+                    routerLink="/rmis/repair"
+                    ><span class="d-none d-sm-inline">New Repair</span></a>
+            </li> -->
+        </ul>
+    </div>
+</div>

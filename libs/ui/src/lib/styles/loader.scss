@@ -1,0 +1,49 @@
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #1C2235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.loader {
+    width: 8vmax;
+    height: 8vmax;
+    border-right: 8px solid #151B8D;
+    border-radius: 100%;
+    animation: spinRight 1000ms linear infinite;
+    
+    &:before, &:after {
+        content: '';
+        width: 6vmax;
+        height: 6vmax;
+        display: block;
+        position: absolute;
+        top: calc(50% - 3vmax);
+        left: calc(50% - 3vmax);
+        border-left: 6px solid #00BFFF;
+        border-radius: 100%;
+        animation: spinLeft 1000ms linear infinite;
+    }
+    
+    &:after {
+        width: 4vmax;
+        height: 4vmax;
+        top: calc(50% - 2vmax);
+        left: calc(50% - 2vmax);
+        border: 0;
+        border-right: 4px solid #16E2F5;
+        animation: none;
+    }
+}
+@keyframes spinLeft {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(720deg);}
+}
+
+@keyframes spinRight {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}

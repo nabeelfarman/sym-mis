@@ -1,0 +1,84 @@
+{
+  "npmScope": "sym-mis",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "admin-panel": {
+      "tags": []
+    },
+    "auth": {
+      "tags": []
+    },
+    "blocks": {
+      "tags": []
+    },
+    "company": {
+      "tags": []
+    },
+    "layouts": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
+    },
+    "repair-module": {
+      "tags": []
+    },
+    "shared": {
+      "tags": []
+    },
+    "shared-helpers-field-validations": {
+      "tags": []
+    },
+    "shared-helpers-guards": {
+      "tags": []
+    },
+    "shared-helpers-interceptors": {
+      "tags": []
+    },
+    "shared-interface": {
+      "tags": []
+    },
+    "shared-services-auth": {
+      "tags": []
+    },
+    "shared-services-data": {
+      "tags": []
+    },
+    "shared-services-global-data": {
+      "tags": []
+    },
+    "sym-mis": {
+      "tags": []
+    },
+    "sym-mis-e2e": {
+      "tags": [],
+      "implicitDependencies": ["sym-mis"]
+    },
+    "table-block": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
+    },
+    "umis": {
+      "tags": []
+    }
+  }
+}

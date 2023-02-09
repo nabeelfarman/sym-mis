@@ -1,0 +1,40 @@
+<div class="row h-100">
+    <div class="col-md-4 h-100">
+        <div 
+            class="d-flex flex-column align-content-center justify-content-center bg-medium brdrAll h-100 w-100 ps-3 pe-3"
+        >
+
+        <h2 class="text-center txtClrGrey pb-2">Create New</h2>
+            
+        <mat-form-field class="w-100">
+            <input matInput placeholder="Company Name" [(ngModel)]="formFields[1].value" required>
+        </mat-form-field>
+        
+        <mat-form-field class="w-100">
+            <textarea matInput placeholder="Address" [(ngModel)]="formFields[2].value" required></textarea>
+        </mat-form-field>
+        
+        <mat-form-field class="w-100">
+            <input matInput placeholder="NTN No" [(ngModel)]="formFields[3].value" required>
+        </mat-form-field>
+        
+        <div class="mt-2 d-flex flex-row justify-content-between">
+            <button type="button" class="btn btn--3 noneOutline" (click)="saveCompany()">
+                <span class="btn__text">Save</span>
+            </button>
+            <button  type="button" class="btn btn--3" (click)="reset()">
+                <span class="btn__text">Reset</span>
+            </button>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="col-md-8 h-100 scroll-verticle pe-3 ps-0" data-simplebar> 
+        <div class="d-flex flex-column">
+            <h2 class="mt-3 txtClrGrey">Saved Outlets</h2>
+            <sym-mis-company-table></sym-mis-company-table>
+        </div>
+        
+    </div>
+</div>

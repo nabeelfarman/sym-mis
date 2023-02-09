@@ -1,0 +1,603 @@
+{
+  "version": 2,
+  "projects": {
+    "admin-panel": {
+      "projectType": "library",
+      "root": "libs/admin-panel",
+      "sourceRoot": "libs/admin-panel/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/admin-panel"],
+          "options": {
+            "jestConfig": "libs/admin-panel/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/admin-panel/src/**/*.ts",
+              "libs/admin-panel/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "auth": {
+      "projectType": "library",
+      "root": "libs/auth",
+      "sourceRoot": "libs/auth/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/auth"],
+          "options": {
+            "jestConfig": "libs/auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/auth/src/**/*.ts",
+              "libs/auth/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "blocks": {
+      "projectType": "library",
+      "root": "libs/blocks",
+      "sourceRoot": "libs/blocks/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/blocks"],
+          "options": {
+            "jestConfig": "libs/blocks/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/blocks/src/**/*.ts",
+              "libs/blocks/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "company": {
+      "projectType": "library",
+      "root": "libs/company",
+      "sourceRoot": "libs/company/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/company"],
+          "options": {
+            "jestConfig": "libs/company/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/company/src/**/*.ts",
+              "libs/company/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "layouts": {
+      "projectType": "library",
+      "root": "libs/layouts",
+      "sourceRoot": "libs/layouts/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/layouts"],
+          "options": {
+            "jestConfig": "libs/layouts/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/layouts/src/**/*.ts",
+              "libs/layouts/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "material": {
+      "projectType": "library",
+      "root": "libs/material",
+      "sourceRoot": "libs/material/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/material"],
+          "options": {
+            "jestConfig": "libs/material/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/material/src/**/*.ts",
+              "libs/material/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "repair-module": {
+      "projectType": "library",
+      "root": "libs/repair-module",
+      "sourceRoot": "libs/repair-module/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/repair-module"],
+          "options": {
+            "jestConfig": "libs/repair-module/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/repair-module/src/**/*.ts",
+              "libs/repair-module/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared": {
+      "projectType": "library",
+      "root": "libs/shared",
+      "sourceRoot": "libs/shared/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared"],
+          "options": {
+            "jestConfig": "libs/shared/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/src/**/*.ts",
+              "libs/shared/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-helpers-field-validations": {
+      "projectType": "library",
+      "root": "libs/shared/helpers/field-validations",
+      "sourceRoot": "libs/shared/helpers/field-validations/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/helpers/field-validations"],
+          "options": {
+            "jestConfig": "libs/shared/helpers/field-validations/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/helpers/field-validations/src/**/*.ts",
+              "libs/shared/helpers/field-validations/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-helpers-guards": {
+      "projectType": "library",
+      "root": "libs/shared/helpers/guards",
+      "sourceRoot": "libs/shared/helpers/guards/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/helpers/guards"],
+          "options": {
+            "jestConfig": "libs/shared/helpers/guards/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/helpers/guards/src/**/*.ts",
+              "libs/shared/helpers/guards/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-helpers-interceptors": {
+      "projectType": "library",
+      "root": "libs/shared/helpers/interceptors",
+      "sourceRoot": "libs/shared/helpers/interceptors/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/helpers/interceptors"],
+          "options": {
+            "jestConfig": "libs/shared/helpers/interceptors/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/helpers/interceptors/src/**/*.ts",
+              "libs/shared/helpers/interceptors/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-interface": {
+      "projectType": "library",
+      "root": "libs/shared/interface",
+      "sourceRoot": "libs/shared/interface/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/interface"],
+          "options": {
+            "jestConfig": "libs/shared/interface/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/interface/src/**/*.ts",
+              "libs/shared/interface/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-services-auth": {
+      "projectType": "library",
+      "root": "libs/shared/services/auth",
+      "sourceRoot": "libs/shared/services/auth/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/services/auth"],
+          "options": {
+            "jestConfig": "libs/shared/services/auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/services/auth/src/**/*.ts",
+              "libs/shared/services/auth/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-services-data": {
+      "projectType": "library",
+      "root": "libs/shared/services/data",
+      "sourceRoot": "libs/shared/services/data/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/services/data"],
+          "options": {
+            "jestConfig": "libs/shared/services/data/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/services/data/src/**/*.ts",
+              "libs/shared/services/data/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-services-global-data": {
+      "projectType": "library",
+      "root": "libs/shared/services/global-data",
+      "sourceRoot": "libs/shared/services/global-data/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/services/global-data"],
+          "options": {
+            "jestConfig": "libs/shared/services/global-data/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/services/global-data/src/**/*.ts",
+              "libs/shared/services/global-data/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "sym-mis": {
+      "projectType": "application",
+      "root": "apps/sym-mis",
+      "sourceRoot": "apps/sym-mis/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "build": {
+          "executor": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/sym-mis",
+            "index": "apps/sym-mis/src/index.html",
+            "main": "apps/sym-mis/src/main.ts",
+            "polyfills": "apps/sym-mis/src/polyfills.ts",
+            "tsConfig": "apps/sym-mis/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/sym-mis/src/favicon.ico",
+              "apps/sym-mis/src/assets",
+              "apps/sym-mis/src/manifest.webmanifest"
+            ],
+            "styles": [
+              "apps/sym-mis/src/styles.scss",
+              "node_modules/animate.css/animate.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["libs/ui/src/lib/styles"]
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1gb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4gb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/sym-mis/src/environments/environment.ts",
+                  "with": "apps/sym-mis/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "executor": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "sym-mis:build:production"
+            },
+            "development": {
+              "browserTarget": "sym-mis:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "executor": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sym-mis:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/sym-mis/src/**/*.ts",
+              "apps/sym-mis/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/sym-mis"],
+          "options": {
+            "jestConfig": "apps/sym-mis/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "sym-mis-e2e": {
+      "root": "apps/sym-mis-e2e",
+      "sourceRoot": "apps/sym-mis-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/sym-mis-e2e/cypress.json",
+            "tsConfig": "apps/sym-mis-e2e/tsconfig.e2e.json",
+            "devServerTarget": "sym-mis:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sym-mis:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/sym-mis-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "table-block": {
+      "projectType": "library",
+      "root": "libs/table-block",
+      "sourceRoot": "libs/table-block/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/table-block"],
+          "options": {
+            "jestConfig": "libs/table-block/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/table-block/src/**/*.ts",
+              "libs/table-block/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "ui": {
+      "projectType": "library",
+      "root": "libs/ui",
+      "sourceRoot": "libs/ui/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui"],
+          "options": {
+            "jestConfig": "libs/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ui/src/**/*.ts", "libs/ui/src/**/*.html"]
+          }
+        }
+      }
+    },
+    "umis": {
+      "projectType": "library",
+      "root": "libs/umis",
+      "sourceRoot": "libs/umis/src",
+      "prefix": "sym-mis",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/umis"],
+          "options": {
+            "jestConfig": "libs/umis/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/umis/src/**/*.ts",
+              "libs/umis/src/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "generators": {
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "scss"
+    }
+  },
+  "defaultProject": "sym-mis"
+}

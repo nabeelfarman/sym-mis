@@ -1,0 +1,14 @@
+<mat-drawer-container class="layout-sideNav-container" autosize>
+  <div class="layout-sidenav-content">
+      <sym-mis-topnav (drawerToggle) = "drawer.toggle()"></sym-mis-topnav>
+      <section class='main-content style-3'>
+        <router-outlet></router-outlet>
+      </section>
+      <sym-mis-footer></sym-mis-footer>
+  </div>
+
+  <mat-drawer #drawer class="layout-sidenav-nav" mode="side">
+    <sym-mis-sidenav></sym-mis-sidenav>
+  </mat-drawer>
+
+</mat-drawer-container>

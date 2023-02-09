@@ -1,0 +1,88 @@
+<div class="header mat-elevation-z5">
+    <mat-toolbar>
+        <button
+            mat-icon-button
+            class="example-icon"
+            (click)="onToggleDrawer()"
+            aria-label="icon-button with menu icon"
+        >
+            <mat-icon>{{ menu_btn }}</mat-icon>
+        </button>
+        <span class="title text-white">{{ title }}</span>
+        <span class="example-spacer"></span>
+
+        <!-- user menu -->
+        <span class="text-white">
+            <small>{{ userName }}</small>
+        </span>
+        <button
+            mat-icon-button
+            class="example-icon favorite-icon"
+            [matMenuTriggerFor]="userMenu"
+            aria-label="Example icon-button with heart icon"
+        >
+            <mat-icon>person</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu">
+            <button mat-menu-item  (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Log out</span>
+            </button> 
+        </mat-menu>
+        <!-- end user menu -->
+
+        <button
+            mat-icon-button
+            class="example-icon"
+            aria-label="Example icon-button with share icon"
+            [matMenuTriggerFor]="menu"
+        >
+            <mat-icon>apps</mat-icon>
+        </button>
+        <!-- <mat-menu class="vw-100" #menu="matMenu">
+            <div class="d-flex flex-row overflow-hidden">
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let item of frstMList" >
+                            <button mat-menu-item class="noneOutline mb-2" (click)="setSidebarMenu(item)">
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <mat-icon>
+                                        {{item.icon}}
+                                    </mat-icon>
+                                    <span class="m-top">{{item.moduleName}}</span>
+                                </div>
+                            </button>
+                        </div> 
+                        <div class="col-md-4" *ngFor="let item of scndMList">
+                            <button mat-menu-item class="noneOutline mb-2" (click)="setSidebarMenu(item)">
+                                <div class="d-flex flex-column align-items-center" matTooltip="{{item.moduleName}}">
+                                    <mat-icon>
+                                        {{item.icon}}
+                                    </mat-icon>
+                                    <span class="m-top">{{item.moduleName}}</span>
+                                </div>
+                            </button>
+                        </div> 
+                        <div class="col-md-4" *ngFor="let item of thrdMList">
+                            <button mat-menu-item class="noneOutline mb-2" (click)="setSidebarMenu(item)">
+                                <div class="d-flex flex-column align-items-center" matTooltip="{{item.moduleName}}">
+                                    <mat-icon>
+                                        {{item.icon}}
+                                    </mat-icon>
+                                    <span class="m-top">{{item.moduleName}}</span>
+                                </div>
+                            </button>
+                        </div> 
+                    </div>
+            </div> -->
+            <mat-menu #menu="matMenu">
+                <div *ngFor="let item of moduleList">
+                  <button mat-menu-item (click)="setSidebarMenu(item)">
+                    <mat-icon>{{item.icon}}</mat-icon>
+                    <span>{{ item.moduleName }}</span>
+                  </button>
+                </div>
+              </mat-menu>
+        <!-- </mat-menu> -->
+    </mat-toolbar>
+</div>
